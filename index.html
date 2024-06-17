@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPI Payment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Make a Payment</h1>
+    <div class="container">
+        <div class="card" data-upi="upi://pay?pa=7204235830@ybl&pn=rahulsomangoudar&am=100&cu=INR">
+            <img src="images/ram.jpg" alt="Ram Kumar">
+            <h2>Ram Kumar</h2>
+            <button class="payment-button" onclick="redirectToUPI(this)">Pay Now</button>
+        </div>
+        <div class="card" data-upi="upi://pay?pa=7204235830@ybl&pn=rahulsomangoudar&am=100&cu=INR">
+            <img src="images/ram.jpg" alt="Sita Verma">
+            <h2>Sita Verma</h2>
+            <button class="payment-button" onclick="redirectToUPI(this)">Pay Now</button>
+        </div>
+        <div class="card" data-upi="upi://pay?pa=7204235830@ybl&pn=rahulsomangoudar&am=100&cu=INRNR">
+            <img src="images/arjun.jpg" alt="Arjun Singh">
+            <h2>Arjun Singh</h2>
+            <button class="payment-button" onclick="redirectToUPI(this)">Pay Now</button>
+        </div>
+        <div class="card" data-upi="upi://pay?pa=7204235830@ybl&pn=rahulsomangoudar&am=100&cu=INRNR">
+            <img src="images/laxmi.jpg" alt="Laxmi Devi">
+            <h2>Laxmi Devi</h2>
+            <button class="payment-button" onclick="redirectToUPI(this)">Pay Now</button>
+        </div>
+        <div class="card" data-upi="upi://pay?pa=7204235830@ybl&pn=rahulsomangoudar&am=100&cu=INRNR">
+            <img src="images/rahul.jpg" alt="Rahul Mehta">
+            <h2>Rahul Mehta</h2>
+            <button class="payment-button" onclick="redirectToUPI(this)">Pay Now</button>
+        </div>
+        <div class="card" data-upi="upi://pay?pa=7204235830@ybl&pn=rahulsomangoudar&am=100&cu=INR">
+            <img src="images/neha.jpg" alt="Neha Sharma">
+            <h2>Neha Sharma</h2>
+            <button class="payment-button" onclick="redirectToUPI(this)">Pay Now</button>
+        </div>
+        <div class="card" data-upi="upi://pay?pa=7204235830@ybl&pn=rahulsomangoudar&am=100&cu=INRNR">
+            <img src="images/vikas.jpg" alt="Vikas Kumar">
+            <h2>Vikas Kumar</h2>
+            <button class="payment-button" onclick="redirectToUPI(this)">Pay Now</button>
+        </div>
+        <div class="card" data-upi="upi://pay?pa=7204235830@ybl&pn=rahulsomangoudar&am=100&cu=INRNR">
+            <img src="images/priya.jpg" alt="Priya Desai">
+            <h2>Priya Desai</h2>
+            <button class="payment-button" onclick="redirectToUPI(this)">Pay Now</button>
+        </div>
+        <div class="card" data-upi="upi://pay?pa=7204235830@ybl&pn=rahulsomangoudar&am=100&cu=INR">
+            <img src="images/amit.jpg" alt="Amit Patel">
+            <h2>Amit Patel</h2>
+            <button class="payment-button" onclick="redirectToUPI(this)">Pay Now</button>
+        </div>
+    </div>
+
+    <script>
+        function redirectToUPI(button) {
+            const upiLink = button.closest('.card').getAttribute('data-upi');
+            window.location.href = upiLink;
+        }
+    </script>
+</body>
+</html>
